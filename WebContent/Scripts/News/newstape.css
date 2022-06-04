@@ -1,0 +1,36 @@
+
+/* body { font-family: 'roboto', Arial, Helvetica, sans-serif } */
+
+.newstape a { color: #ccc; }
+
+#wrapper {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.text-justify { text-align: justify; }
+
+.newstape {
+  /* background-color: #ccc;
+  color: #fff; */
+  height: 250px;
+  overflow: hidden;
+}
+
+.newstape-content {
+  position: relative;
+  padding: 15px;
+}
+
+.newstape-drag { cursor: ns-resize; }
+
+.news-block .text-justify{
+  color: #000 !important;
+  text-align: left;
+  padding: 0 !important;
+  background-color: transparent !important;
+}

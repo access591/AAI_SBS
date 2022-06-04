@@ -1,0 +1,56 @@
+<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'Download.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+  </head>
+  
+  <body>
+   <%    
+  String filename = request.getParameter("filename"); 
+  String doctype = request.getParameter("doctype");
+  String filepath="";
+  if(doctype.equals("fin")){  
+   filepath = "D:\\SBS_Upload\\fin\\"; 
+   }else{
+   filepath = "D:\\SBS_Upload\\hr\\";
+   }  
+  response.setContentType("APPLICATION/OCTET-STREAM");   
+  response.setHeader("Content-Disposition","attachment; filename=\"" + filename + "\"");   
+  
+  java.io.FileInputStream fileInputStream=new java.io.FileInputStream(filepath + filename);  
+  int i;  
+  if(fileInputStream.read()!=-1 ){
+  while ((i=fileInputStream.read()) != -1) {  
+    out.write(i);   
+  }   
+  }else{
+  %>
+  <div class="">
+		<div class="col-md-12" style="text-align:center">File not Exist 
+			<button type="button" class="btn default">Back</button>
+		</div>
+  </div>
+  <% 
+  }
+  fileInputStream.close();   
+%>   
+  </body>
+</html>

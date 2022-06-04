@@ -1,0 +1,225 @@
+/***
+Login page
+***/
+
+/* logo page */
+.header .navbar-nav{margin:0;}
+.control-label {text-align:right; padding:7px 3px 0 0;}
+.form-control{height:30px;}
+
+a { color: #fff; font-family:verdana !important;}
+
+a:hover { color: #4d90fe;}
+.login {
+  /*background-color: #666 !important;*/
+}
+.login .content h5 {
+color: #eee;
+}
+h1, h2, h3 {
+margin-top: 10px;
+margin-bottom: 10px;
+} 
+.bfont, .bfont:hover{font-size:15px;color:#ace33c;}
+/*.btn.blue {
+background-color: #68b12f;
+}*/
+
+.login .logo {
+  margin: 0 auto;   
+  margin-top:5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.input-icon i {
+    margin-top: 8px;
+}
+.login .content {
+ /* background: url(../../img/bg-white-lock.png) repeat;*/
+ color: #FFFFFF !important;
+    background: #07a7e3;
+    background: -moz-linear-gradient(-45deg, #dc147a 0%, #6baca8 100%);
+    background: -webkit-linear-gradient(-45deg, #0dc147a 0%, #6baca8 100%);
+    background: linear-gradient(135deg, #dc147a 0%, #6baca8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$qp-color-1, endColorstr=$qp-color-2,GradientType=1 );
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+/*	background-color: #022351;*/
+  opacity: 0.95;
+  border-radius: 20px;
+  box-shadow: 0 5px 12px #314355;
+  width: 300px;
+  margin: 70px 30px 0 auto; 
+  margin-bottom: 0px;
+  padding: 30px;  
+  padding-top: 20px;  
+  padding-bottom: 15px;  
+}
+
+.login .content h3 {
+  color: #eee;
+}
+.login .content h4  {
+  color: #eee;
+}
+
+.login .content p,
+.login .content label {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.login .content .login-form,
+.login .content .forget-form {
+    padding: 0px;
+    margin: 0px;
+}
+
+.login .content .form-control {
+  background-color: #fff;
+}
+
+.login .content .forget-form {
+  display: none;
+}
+
+.login .content .register-form {
+  display: none;
+}
+
+.login .content .form-title {
+  font-weight: 300;
+  color: #ace33c;
+  /*margin-bottom: 25px;*/
+}
+
+.login .content .form-actions {
+  background-color: transparent;
+  clear: both;
+  border: 0px;
+  padding: 0px;
+}
+
+.login .content .form-actions .checkbox {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.login .content .forget-form .form-actions {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}  
+
+.login .content .register-form .form-actions {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.login .content .form-actions .checkbox {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.login .content .form-actions .btn {
+  margin-top: 1px;
+}
+
+.login .content .forget-password {
+  margin-bottom: 5px !important;
+  margin-top: 11px;
+}
+
+.login .content .create-account {
+  border-top: 1px dotted #eee;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+.login .content .create-account a {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* select2 dropdowns */
+.login .content .select2-container i {
+  display: inline-block;
+  position: relative;
+  color: #ccc;
+  z-index: 1;
+  top:1px;
+  margin: 4px 4px 0px 3px; 
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  text-align: center; 
+}
+
+.login .content .has-error .select2-container i {
+  color: #b94a48;
+}
+
+.login .content .select2-container a span {
+  font-size: 13px;
+}
+
+.login .content .select2-container a span img {
+  margin-left: 4px;
+}
+
+/* footer copyright */
+.login .copyright {
+  text-align: center;
+  margin: 0 auto; 
+  padding: 10px;
+  color: #eee;
+  font-size: 12px;
+}
+#ui-id-1{
+ max-height: 30%;
+ overflow-x: hidden;
+ overflow-y: scroll;
+ padding:10px 5px;
+}
+.input-icon{
+ margin-bottom: 10px;
+}
+.header .navbar-nav > li.dropdown .dropdown-toggle > i {
+    font-size: 20px;
+    color: #fff;
+}
+.header .navbar-nav > li.dropdown .dropdown-toggle {
+    padding: 13px 5px 7px 10px;
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+ .login .content{margin-top:30px;}
+ .header .nav > li > .dropdown-menu.notification {margin-right:0 !important;}
+}
+@media (max-width: 480px) {
+  /***
+  Login page
+  ***/
+  .login .logo {
+    margin-top:10px;
+  }
+
+.login{    margin: 20px;}
+.login .content{width: 100%; margin-top:65px;}
+  .login .content {
+    padding: 20px 30px 30px; 
+    width: 100%;
+  }
+
+  .login .content h3 {
+    font-size: 22px;
+  }
+
+  .login .checkbox {
+    font-size: 13px;
+  }
+}
